@@ -8,8 +8,49 @@
 <head>
     <meta charset="UTF-8">
     <title>ErA MaStOr'S Chess Game</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+        #loader_chess {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            background: white;
+        }
+
+        #loader_chess > img {
+            width: 700px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
 </head>
 <body>
+<div id="loader_chess">
+    <img alt="loader failed!!" src="assets/images/preview.gif">
+</div>
 
+<h1>hello....welcome to era chess game</h1>
+<iframe frameborder="0" height="800px" src="http://ijse.lk" width="100%"></iframe>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    $(window).on('load', function () {
+        console.log("Window Loaded");
+        $("#loader_chess").fadeOut(1000);
+    });
+
+
+    $(document).ready(function () {
+        console.log("Document Ready");
+    });
+
+    $(function () {
+        console.log("Document Loaded");
+    });
+</script>
 </body>
 </html>
