@@ -29,6 +29,7 @@
     </style>
 </head>
 <body>
+
 <div id="loader_chess">
     <img alt="loader failed!!" src="assets/images/preview.gif">
 </div>
@@ -37,11 +38,12 @@
 <iframe frameborder="0" height="800px" src="http://ijse.lk" width="100%"></iframe>
 
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+
 <script>
     $(window).on('load', function () {
         console.log("Window Loaded");
         $("#loader_chess").css('display', 'none')
-       /* $("#loader_chess").fadeOut(1000);*/
+        $("#loader_chess").fadeOut(1000);
     });
 
 
@@ -53,5 +55,6 @@
         console.log("Document Loaded");
     });
 </script>
+
 </body>
 </html>
