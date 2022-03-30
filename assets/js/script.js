@@ -1,3 +1,17 @@
+$(window).on('load', function () {
+    console.log("Window Loaded");
+    /* $("#loader_chess").css('display', 'none')*/
+    $("#loader_chess").fadeOut(1000);
+});
+
+$(document).ready(function () {
+    console.log("Document Ready");
+});
+
+$(function () {
+    console.log("Document Loaded");
+});
+
 let main = {
 
     variables: {
